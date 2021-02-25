@@ -49,16 +49,16 @@ const Home = ({ randomContributors }) => {
               <div className="grid grid-cols-1 gap-10 px-6 mx-auto max-w-7xl lg:grid-cols-3 xl:grid-cols-2 md:gap-6 xl:-mt-10">
                 <div className="z-10 space-y-10 lg:w-full">
                   <h2 className="-mt-8 font-medium text-5xl-squashed lg:-mt-0 font-secondary xl:text-6xl xl:font-medium dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-gradient-white to-blue-gradient-light-blue">
-                    The Fullstack React Framework
+                    Kerangka Kerja React Fullstack
                   </h2>
                   <p className="text-lg xl:text-xl xl:font-medium text-off-white lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue xl:w-4/5">
-                    Blitz is a batteries-included framework that's inspired by Ruby on Rails, is
-                    built on Next.js, and features a "Zero-API" data layer abstraction that
-                    eliminates the need for REST/GraphQL.
+                    Blitz adalah kerangka kerja <i>(termasuk baterai)</i> yang terinspirasi oleh
+                    Ruby on Rails, dibangun di atas Next.js dan menampilkan abstraksi lapisan data
+                    "Zero API" yang membuat REST/GraphQL menjadi terlalu berlebihan.
                   </p>
                   <div className="flex space-x-4">
                     <ButtonLink className="w-2/3 lg:w-auto rounded-tl-xl" href="/docs/get-started">
-                      Try Blitz in Under 5 Mins
+                      Coba Blitz Dalam 5 Menit
                     </ButtonLink>
                     <ButtonLink
                       href="https://github.com/blitz-js/blitz"
@@ -95,24 +95,25 @@ const Home = ({ randomContributors }) => {
             </div>
             <div className="z-10 px-6 mx-auto space-y-12 text-lg text-center text-white lg:space-y-0 lg:space-x-12 lg:flex lg:text-left max-w-7xl xl:font-mediumxl:text-xl">
               <FeatureIcon icon="layers">
-                “Zero-API” data layer lets you{" "}
-                <strong>import server code directly into your components</strong> instead of having
-                to manually add API endpoints and do client-side fetching and caching.
+                Lapisan data "Zero-API" memungkinkan Anda{" "}
+                <strong>mengimpor kode server langsung ke komponen Anda</strong> daripada
+                menambahkan endpoint API secara manual dan melakukan permintaan serta menyimpan data
+                ke cache di sisi klien.
               </FeatureIcon>
               <FeatureIcon icon="lighteningBolt">
-                New Blitz apps come with all the{" "}
-                <strong>boring stuff already set up for you!</strong> Like ESLint, Prettier, Jest,
-                user sign up, log in, and password reset.
+                Di aplikasi Blitz terbaru, semua{" "}
+                <strong>hal yang membosankan sudah disiapkan untuk Anda!</strong> Seperti ESLint,
+                Prettier, Jest, pendaftaran pengguna, masuk dan reset kata sandi.
               </FeatureIcon>
               <FeatureIcon icon="graphUp">
-                Provides <strong>helpful defaults and conventions</strong> for things like routing,
-                file structure, and authentication while also being extremely flexible.
+                Menyediakan <strong>pengaturan dan konvensi default</strong> yang berguna untuk
+                hal-hal seperti perutean, struktur file dan otentikasi, sekaligus sangat fleksibel.
               </FeatureIcon>
             </div>
             <div className="grid w-full gap-5 px-6 mx-auto text-white xl:gap-10 max-w-7xl lg:grid-cols-2">
               <Link href="/#" passHref>
                 <StyledLink className="flex items-center justify-between pb-1 text-lg border-b border-opacity-50 border-blue-mid lg:col-span-2 font-secondary xl:text-xl">
-                  <span>Top Videos</span>
+                  <span>Video Teratas</span>
 
                   {/*
                   <span className="flex items-center">
@@ -128,7 +129,7 @@ const Home = ({ randomContributors }) => {
 
             <div className="relative w-full mx-auto space-y-10 lg:space-y-20 xl:space-y-36 max-w-7xl">
               <h2 className="px-6 text-3xl font-semibold xl:text-5xl xl:w-1/2">
-                Everything You Need For Production Apps
+                Semua Yang Dibutuhkan Untuk Aplikasi Produksi
               </h2>
               <div className="w-full">
                 <Hand
@@ -237,17 +238,17 @@ const Home = ({ randomContributors }) => {
                 <div className="z-10 flex flex-col justify-between space-y-6 lg:justify-end">
                   <div className="flex flex-col space-y-6 lg:h-auto lg:text-transparent text-off-white">
                     <p className="lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue lg:bg-clip-text">
-                      Our community is warm, safe, diverse, inclusive, and fun! LGBTQ+, women, and
-                      minorities are especially welcome.
+                      Komunitas kami hangat, aman, beragam, inklusif, dan menyenangkan! Untuk
+                      LGBTQ+, perempuan dan minoritas sangat dipersilakan.
                     </p>
                     <p className="lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue lg:bg-clip-text">
-                      Please read our{" "}
+                      Silakan baca{" "}
                       <Link href="/docs/code-of-conduct" passHref>
                         <StyledLink className="underline text-off-white hover:text-blue-light">
-                          Code of Conduct
+                          Kode Etik
                         </StyledLink>
-                      </Link>
-                      .
+                      </Link>{" "}
+                      kami.
                     </p>
                   </div>
                   <ButtonLink
@@ -256,7 +257,7 @@ const Home = ({ randomContributors }) => {
                     rel="noopener noreferrer"
                     className="rounded-bl-none rounded-xl lg:w-max"
                   >
-                    Join our Discord Community
+                    Gabung ke Komunitas di Discord
                   </ButtonLink>
                 </div>
                 <div className="z-10 flex flex-col justify-between space-y-6 lg:justify-start">
@@ -436,8 +437,9 @@ const getStaticProps = async () => {
 
 Home.layoutProps = {
   meta: {
-    title: "Blitz.js - The Fullstack React Framework",
-    description: `Blitz is a hyper-productive fullstack React framework that's built on Next.js and features a "Zero-API" data layer.`,
+    title: "Blitz.js - Kerangka Kerja React Fullstack",
+    description:
+      'Blitz adalah kerangka kerja React full-stack yang sangat produktif, dibangun di ekosistem Next.js dan memiliki lapisan data "Zero-API".',
   },
 }
 
